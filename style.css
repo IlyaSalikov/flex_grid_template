@@ -22,9 +22,8 @@ a {
     grid-template-columns: 40% 30% 30%;
     grid-template-rows: repeat(6, auto);
     grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    max-width: 1041px;
-    max-height: 953px;
+    grid-row-gap: 15px;
+    max-width: 1250px;
     margin: 0 auto;
     background-color: #fff;
     padding: 0 50px;
@@ -35,28 +34,19 @@ header {
     justify-content: space-between;
     grid-column: 1/4;
     grid-row: 1/2;
-    border-bottom: 2px solid #b0e0ea;
+    border-bottom: 3px solid #b0e0ea;
     color: #9f9c9c;
-    padding-top: 18px;
-    padding-bottom: 17px;
-    margin-right: 20px; 
+    padding: 20px 0;
 }
 
 header > .logo i {
-    color: rgba(80, 198, 219);
-    font-size: 30px;
-}
-
-header > nav {
-    padding-top: 1px;
-    margin-left: 7px;
-    
+    color: rgba(80, 198, 219, 0.85);
+    font-size: 2em;
 }
 
 header > nav > ul {
     display: flex;
     list-style-type: none;
-    font-size: .8em;
 }
 
 header > nav > ul > li {
@@ -66,13 +56,10 @@ header > nav > ul > li {
 header > button, button:active, button:focus {
     background-color: #51bb7b;
     color: #fff;
-    height: 25px;
-    padding: 5px 20px;
+    padding: 6px 25px;
     border-radius: 1.3em;
     border-style: none;
     outline: none;
-    font-size: .72em;
-    margin-top: 1px;
 }
 
 header > button:focus {
@@ -93,15 +80,11 @@ header > button:focus {
     grid-row: 3/5;
     border-top: 3px solid #693f7e;
     background-color: #f9f9f6;
-    padding-left: 15px;
-    padding-bottom: 10px;/*
-    margin-right: 7px;*/
+    padding: 2em;
 }
 
 .sidebar h3 {
     margin: 1em 0;
-    font-size: 1em;
-    margin-top: 30px;
 }
 
 .sidebar ul {
@@ -109,8 +92,7 @@ header > button:focus {
 }
 
 .sidebar li {
-    margin: .6em 0;
-    font-size: .7em;
+    margin: .2em 0;
 }
 
 .sidebar a {
@@ -124,16 +106,14 @@ main {
 }
 
 main h1 {
-    color: rgba(80, 198, 219);
+    color: rgba(80, 198, 219, 0.85);
     font-weight: 700;
-    font-size: 1.7em;
     margin-bottom: .5em;
 }
 
 main p {
     margin: .7em 0;
-    font-weight: 400;
-    font-size: .8em;
+    font-weight: 500;
     color: #918b8b;
 }
 
@@ -142,10 +122,8 @@ main p {
     justify-content: space-around;
     grid-column: 2/4;
     grid-row: 4/5;
-    border: .5px solid #d9d9d9;
-    padding: 16px;
-    padding-bottom: 10px;
-    margin-right: 19px;
+    border: 1.5px solid #d9d9d9;
+    padding: 1em;
 }
 
 .help-item {
@@ -157,19 +135,17 @@ main p {
 
 .help-item h3 {
     font-weight: 500;
-    font-size: .9em;
 }
 
 .help-item p {
-    margin: .8em 0;
-    font-size: .65em;
+    margin: .75em 0;
+    font-size: .75em;
 }
 
 .help-item button {
-    border: 2.5px solid rgba(80, 198, 219);
-    padding: 5px;
-    color: rgba(80, 198, 219);
-    font-size: .70em;
+    border: 2.5px solid rgba(80, 198, 219, 0.85);
+    padding: .5em;
+    color: rgba(80, 198, 219, 0.85);
     font-weight: 500;
     background-color: #fff;
     cursor: pointer;
@@ -179,9 +155,9 @@ main p {
     display: grid;
     grid-column: 1/3;
     grid-row: 5/6;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     grid-gap: .8em;
-    margin-right: 14px;
+    
 }
 
 .gallery img {
@@ -191,13 +167,12 @@ main p {
 .sidebar-related {
     grid-column: 3/4;
     grid-row: 5/6;
-    padding: 1em;
-    padding-top: 0;
+    padding: 2em;
 }
 
 .sidebar-related h3 {
-    margin-bottom: .4em;
-    padding-bottom: .4em;
+    margin-bottom: .5em;
+    padding-bottom: .5em;
     border-bottom: 1px solid #d9d9d9;
 }
 
@@ -217,21 +192,17 @@ main p {
     grid-row: 6/7;
     text-align: center;
     background-color: #9f9c9c;
-    padding-top: 11px;
-    padding-bottom: 25px;
-    margin-right: 19px;
+    padding: 2em 0;
 }
 
 .footer h3 {
     color: #fff;
-    margin-top: .2em;
-    margin-bottom: .4em;
-    font-size: 1em;
+    margin-bottom: .7em;
 }
 
 .footer p {
-    margin-top: .8em;
-    font-size: .70em;
+    margin-bottom: .8em;
+    font-size: .75em;
 }
 
 @media screen and (max-width: 768px) {
